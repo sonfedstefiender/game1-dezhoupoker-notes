@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <meta name="description" content="了解德州扑克游戏网站 game1-dezhoupoker 的用途和特点，快速识别平台功能，轻松开始游戏旅程。">
+    <title>德州扑克 · 轻量导航介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5fbfc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #13333b;
+            line-height: 1.65;
+            padding: 0 1rem 2.5rem;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航 */
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 0 0.6rem;
+            border-bottom: 2px solid #c5e3e9;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 1.25rem;
+            letter-spacing: 0.02em;
+            color: #186b7a;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.4rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1d5f6b;
+            font-size: 0.95rem;
+            padding: 0.2rem 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .nav-links a:hover {
+            border-bottom-color: #36a0b2;
+            color: #0b414d;
+        }
+
+        /* hero */
+        .hero {
+            margin: 2.8rem 0 2.2rem;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: #0e4956;
+        }
+
+        .hero .sub {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            color: #2b6875;
+            max-width: 600px;
+        }
+
+        .hero .sub a {
+            font-weight: 500;
+        }
+
+        /* 通用链接样式 */
+        a {
+            color: #1b7f92;
+            text-decoration: none;
+            border-bottom: 1px dotted #8dcbd8;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        a:hover {
+            color: #0a5a68;
+            border-bottom-color: #0a5a68;
+        }
+
+        /* 核心介绍卡片 */
+        .intro-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem 2.2rem;
+            box-shadow: 0 8px 18px rgba(20, 80, 90, 0.05);
+            margin: 2rem 0 2.5rem;
+            border: 1px solid #d4eef2;
+        }
+
+        .intro-card h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #12505e;
+            display: inline-block;
+            border-left: 5px solid #2f9aad;
+            padding-left: 0.8rem;
+        }
+
+        .intro-card p {
+            margin-bottom: 1.2rem;
+        }
+
+        .intro-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 三个场景模块 (网格卡片) */
+        .scenes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 1.8rem 0 2.8rem;
+        }
+
+        .scene-item {
+            background: white;
+            border-radius: 20px;
+            padding: 1.6rem 1.2rem 1.8rem;
+            border: 1px solid #cde6eb;
+            box-shadow: 0 4px 10px rgba(0, 50, 60, 0.03);
+            transition: transform 0.15s, box-shadow 0.2s;
+        }
+
+        .scene-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(25, 100, 115, 0.06);
+        }
+
+        .scene-item h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+            color: #0e4b58;
+            border-bottom: 2px solid #b2dbe3;
+            padding-bottom: 0.4rem;
+            display: inline-block;
+        }
+
+        .scene-item p {
+            color: #1f4f5b;
+            font-size: 0.95rem;
+        }
+
+        .scene-item .badge {
+            display: inline-block;
+            background: #d1eef4;
+            color: #0b4c59;
+            font-size: 0.75rem;
+            padding: 0.15rem 0.7rem;
+            border-radius: 30px;
+            margin-top: 0.6rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* 常见说明区块 (FAQ摘要) */
+        .faq-section {
+            background: #e7f4f7;
+            border-radius: 28px;
+            padding: 2rem 2rem 1.8rem;
+            margin: 2.2rem 0 2.5rem;
+        }
+
+        .faq-section h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #0d4b58;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .faq-section h2:before {
+            content: "▹";
+            font-size: 1.7rem;
+            color: #208299;
+            margin-right: 0.2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #0b4754;
+            margin-bottom: 0.2rem;
+            font-size: 1rem;
+        }
+
+        .faq-item p {
+            color: #1f525f;
+            font-size: 0.95rem;
+            margin-left: 1.1rem;
+        }
+
+        .faq-item p a {
+            font-weight: 500;
+        }
+
+        /* 引导提示/额外说明 */
+        .notice-box {
+            background: white;
+            border-radius: 18px;
+            padding: 1.3rem 1.8rem;
+            margin: 1.5rem 0 2rem;
+            border-left: 6px solid #2f9aad;
+            color: #144a56;
+            font-size: 0.98rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .notice-box a {
+            font-weight: 500;
+        }
+
+        /* 按钮风格 (仅作装饰) */
+        .demo-btn {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #2f9aad;
+            color: #125e6d;
+            padding: 0.5rem 1.6rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+            cursor: default;
+            margin-top: 0.5rem;
+        }
+
+        .demo-btn:hover {
+            background: #d2edf2;
+            color: #09434f;
+        }
+
+        /* 响应式 */
+        @media (max-width: 560px) {
+            body {
+                padding: 0 0.6rem 2rem;
+            }
+            .nav-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.4rem;
+            }
+            .nav-links {
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .intro-card {
+                padding: 1.5rem 1.2rem;
+            }
+            .scenes-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .faq-section {
+                padding: 1.6rem 1.2rem;
+            }
+            .faq-item p {
+                margin-left: 0.6rem;
+            }
+        }
+
+        /* 辅助间距 */
+        .mt-1 { margin-top: 1rem; }
+        .mb-1 { margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 顶部导航 -->
+    <nav class="nav-bar">
+        <span class="nav-logo">♢ 德扑站</span>
+        <div class="nav-links">
+            <a href="#">介绍</a>
+            <a href="#">场景</a>
+            <a href="#">说明</a>
+            <a href="#">更多</a>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>德州扑克<br>轻量导航介绍</h1>
+        <div class="sub">
+            如果你想快速了解网站 <a href="https://game1-dezhoupoker.com">德州扑克</a> 提供什么、适不适合自己，这里有一份简洁的用途说明。
+        </div>
+    </div>
+
+    <!-- 核心介绍卡片 -->
+    <div class="intro-card">
+        <h2>网站用途速览</h2>
+        <p>game1-dezhoupoker.com 是一个围绕德州扑克玩法设计的轻服务站点。它不提供不切实际的承诺，而是聚焦在规则梳理、基础策略提示与常见疑问解答上。无论你是初次接触德扑，还是想快速查阅某条规则，这里都能给你一个相对清晰的起点。</p>
+        <p>从界面到内容都保持了克制的风格——没有弹窗干扰，没有诱导性的口号，只是把关于 <a href="https://game1-dezhoupoker.com">德州扑克</a> 的核心信息整理在一起。如果你不想在搜索中浪费时间，可以把它当作一个顺手的信息聚合页。</p>
+        <p><span class="demo-btn">了解基础 →</span></p>
+    </div>
+
+    <!-- 三个场景模块 (网格卡片) -->
+    <div style="margin-top: 0.2rem;">
+        <h2 style="font-size: 1.4rem; font-weight: 500; color: #0f4d5a; margin-bottom: 0.2rem;">常见使用场景</h2>
+        <p style="color: #2e6b78; margin-bottom: 0.8rem;">下面三种情况，也许正适合打开这个页面。</p>
+    </div>
+
+    <div class="scenes-grid">
+        <div class="scene-item">
+            <h3>规则查阅</h3>
+            <p>手牌大小、下注轮次、位置说明…… 当你需要快速确认某条德扑规则，不用翻杂乱论坛，直接在这里找。</p>
+            <span class="badge">简明</span>
+        </div>
+        <div class="scene-item">
+            <h3>策略入门</h3>
+            <p>从起手牌选择到翻后思路，一些基础策略以短文形式呈现。适合刚接触 <a href="https://game1-dezhoupoker.com">德州扑克</a> 的玩家建立框架。</p>
+            <span class="badge">无术语轰炸</span>
+        </div>
+        <div class="scene-item">
+            <h3>名词解释</h3>
+            <p>“c-bet”、“range”、“outs”……如果对常见扑克术语感到模糊，这个模块能帮你快速理解，节省搜索时间。</p>
+            <span class="badge">实用</span>
+        </div>
+    </div>
+
+    <!-- 常见说明 (FAQ摘要) -->
+    <div class="faq-section">
+        <h2>常见说明</h2>
+        <div class="faq-item">
+            <strong>这个网站是教人赢钱的吗？</strong>
+            <p>不是。它不兜售必胜技巧，也没有包赢教程。内容基于普遍认可的德扑逻辑，目的是帮助理解游戏，而不是制造虚假期望。</p>
+        </div>
+        <div class="faq-item">
+            <strong>内容适合完全的新手吗？</strong>
+            <p>适合。大部分说明从基础展开，没有默认你有经验。如果你已经熟悉规则，也可以当作快速参考。需要了解更多，可以直接访问 <a href="https://game1-dezhoupoker.com">德州扑克</a> 站点。</p>
+        </div>
+        <div class="faq-item">
+            <strong>页面会频繁更新吗？</strong>
+            <p>站点保持低频率更新，确保每一条信息都经过核对。不会为了刷新而塞入无用内容，稳定可靠比数量更重要。</p>
+        </div>
+    </div>
+
+    <!-- 额外的提示 / 说明块  (自然嵌入链接) -->
+    <div class="notice-box">
+        <span style="font-weight: 500;">📌 一点说明：</span> 如果你已经对德州扑克有一定了解，可以把这里当作一个人工筛选后的信息站。不需要反复跳转，多数基础问题都能在 <a href="https://game1-dezhoupoker.com">德州扑克</a> 页面内得到回答。
+    </div>
+
+    <!-- 结尾 (无强诱导) -->
+    <div style="text-align: left; padding: 1rem 0 0.2rem; border-top: 1px solid #d0e2e7; color: #386d7a; font-size: 0.9rem;">
+        <span>一个克制的德扑信息点 · 仅作导航介绍用途</span>
+    </div>
+
+    <!-- 隐藏创作种子 (仅用于变化，不显示) -->
+    <span style="display: none;">ed93415d24097586</span>
+</div>
+</body>
+</html>
